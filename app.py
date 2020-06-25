@@ -24,7 +24,8 @@ def main():
 	result = ""	
 	if st.button("PREDICT"):
 		result = model(int(age),int(test_score),int(interview_score))
-	st.success(f" THE PREDICTED/SUGGESTED SALARY IS {result}")
+		va = result.round()
+	st.success(f" THE PREDICTED/SUGGESTED SALARY IS {va}")
 
 	if st.button("ABOUT"):
 		st.text("THIS WEBAPP PREDICTS THE SALARY BASED UPON YOUR AGE,TEST/INTERVIEW SCORES")
