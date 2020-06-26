@@ -18,8 +18,8 @@ def main():
 	"""
 	st.markdown(html_temp,unsafe_allow_html= True)
 	age = st.text_input("age"," ")
-	test_score		= st.text_input("test_score"," ")
-	interview_score	= st.text_input("interview_score"," ")
+	test_score		= st.text_input("test_score_out_of_10"," ")
+	interview_score	= st.text_input("interview_score_out_of_10"," ")
 
 	result = ""	
 	if st.button("PREDICT"):
